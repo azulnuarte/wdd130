@@ -1,0 +1,59 @@
+@import url(https://fonts.google.com/);
+
+:root {
+  --primary-color: #063751;
+  --secondary-color:#0B6DA2;
+  
+  --accent1-color: #66C3F4;
+  --accent2-color: #12C0CF;
+
+  --heading-font: "oswald", serif;
+  --paragraph-font: "Roboto mono", serif;
+
+  --nav-background-color: #F1F9FE;
+  --nav-link-color: #031B29;
+  --nav-hover-link-color: #B7E3FA;
+  --nav-hover-background-color: #EAF7FE;
+
+}
+
+body {
+    font-family:var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+
+  header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+  }
+
+  p {
+    padding: 25px;
+  }
+  nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+  }
+  
+  nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
