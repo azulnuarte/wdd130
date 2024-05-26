@@ -1,84 +1,75 @@
 *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main element */
+main {
+    max-width: 840px;
   }
   
-  
-  /* styles.css */
-  nav{
-      border: 15px solid steelblue;
-      padding: 2rem steelblue;
-      background-color: steelblue;
-      color:rgb(255, 255, 255)
-  
-  
+  /* Aside element */
+  aside {
+    width: 20rem;
+    text-align: center;
+    margin-top: 0px;
   }
-  /* Main element */
-  main {
-      max-width: 840px;
-    }
-    
-    /* Aside element */
-    aside {
-      width: 20rem;
-      text-align: center;
-      margin-top: 0px;
-    }
-    aside h2{
-      position: absolute;
-      top:auto;
-      left:auto;
-      margin-top: 0px;
+  aside h2{
+    position: absolute;
+    top:auto;
+    left:auto;
+    margin-top: 0px;
+
+  }
   
-    }
-    
-    /* Image inside Aside */
-    aside img {
-      width: 300px;
-      height:auto;
-      padding: 2px;
-      border:1px solid;
-      float: auto;
-      margin-top:60px;
-    }
-    
-    /* Specificity adjustment for profile image */
-    main img {
-      width: 150px;
-      height: auto;
-      border:1px solid steelblue;
-      padding: 2px;
-      box-shadow: 0 0 30px rgb(85, 83, 83);
-      float: right;
-      /* Additional styles for profile images if needed */
-    }
-    
-    /* Paragraph */
-    p {
-      padding: 0;
-      margin-top: 70px;
-    }
-    
-    /* Footer */
-    footer {
-      margin-top: 150px;
-      border-top: 1px solid steelblue;
-      text-align: center;
-    }
+  /* Image inside Aside */
+  aside img {
+    width: 300px;
+    height:auto;
+    padding: 2px;
+    border:1px solid;
+    float: auto;
+    margin-top:60px;
+  }
   
-  
-  .box {
-    padding:0%;
-    background-color: rgb(229, 234, 238);
-    width: auto;
+  /* Specificity adjustment for profile image */
+  main img {
+    width: 150px;
     height: auto;
-    
-    }
-    header, footer {
-  max-width: 840px;
-  margin: 0 auto;
-    }
+    border:1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px rgb(85, 83, 83);
+    float: right;
+    /* Additional styles for profile images if needed */
+  }
+  
+  /* Paragraph */
+  p {
+    padding: 0;
+    margin-top: 70px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 150px;
+    border-top: 1px solid steelblue;
+    text-align: center;
+  }
+
+
+.box {
+  padding:0%;
+  background-color: rgb(196, 218, 236);
+  width: auto;
+  height: auto;
+  border:1px solid gray;
+  
+  }
+  header, footer {
+max-width: auto;
+margin: 0% ;
+  }
   
 nav {
   background-color: steelblue;
