@@ -79,3 +79,52 @@
   max-width: 840px;
   margin: 0 auto;
     }
+  
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+nav a {
+  display: flex;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; 
+}
+h1{
+  border-bottom:1px solid black;
+
+}
+
+header, .grid, footer {max-width: auto;}
+ .grid {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+ }
+
+ main {
+  grid-column: 2/3;
+  margin: 1rem;
+  justify-content: center;
+ }
+
+ aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+ul{
+  box-sizing: border-box;
+  border:1px solid gray;
+  background-color: rgb(196, 218, 236);
+  
+}
