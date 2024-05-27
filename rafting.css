@@ -103,3 +103,56 @@ footer p {
     width: 30px;
     margin: 0 10px;
 }
+header{
+    background-color: #b9c9cf;
+    text-align: center;
+    margin:1rem auto;
+    display:grid;
+    grid-template-columns: 120px 1fr 2fr;
+    border-bottom: 1px solid black;
+    max-width: 1000px;
+}
+.logo img{
+    margin:0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+h1{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    font-family:'Courier New', Courier, monospace;
+    text-align: right;
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration:dashed;
+    padding: 1rem;
+  }
+  
+  nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+  }
+  
+  nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+  }
+.navigation{
+    display:flex;
+    list-style: none;
+
+}
+.navigation a{
+    display: block;
+    color:white;
+    padding:20px;
+    text-decoration: double;
+
+}
+.navigation a:hover {
+	color: rgb(103, 107, 70);
+	font-weight: 700;
+	text-decoration: underline;
+}
