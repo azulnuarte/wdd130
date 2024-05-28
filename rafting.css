@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #007bff; /* Cambia este color según tu esquema de color */
+    --primary-color: #14263a; /* Cambia este color según tu esquema de color */
     --secondary-color: #6c757d; /* Cambia este color según tu esquema de color */
     --text-color: #333; /* Cambia este color según tu esquema de color */
 }
@@ -81,10 +81,14 @@ h2 {
 }
 
 footer {
-    background-color: var(--secondary-color);
-    color: rgba(255, 255, 255, 0.89);
+    background-color:#9dbac2 ;
+    color: rgba(12, 11, 11, 0.89);
     padding: 20px;
     text-align: center;
+    border-top: 1px solid black;
+    margin: 1rem auto;
+    border-bottom: 1px solid black;
+    
 }
 
 footer p {
@@ -93,58 +97,110 @@ footer p {
 
 .sociallinks {
     margin-top: 20px;
+    
 }
 
 .sociallinks a {
     text-decoration: none;
+    
 }
 
 .sociallinks img {
     width: 30px;
     margin: 0 10px;
+    
+    
 }
 header{
-    background-color: #b9c9cf;
+    background-color:#9dbac2 ;
     text-align: center;
     margin:1rem auto;
     display:grid;
     grid-template-columns: 120px 1fr 2fr;
     border-bottom: 1px solid black;
     max-width: 1000px;
+    border-top: 1px solid black;
+    justify-content: space-between;
+    padding:20px;
+    display:flex;
 }
 .logo img{
     margin:0 0.25rem 0 1rem;
     width: 64px;
     height: auto;
+    align-items: left;
 }
 h1{
     font-size: 2rem;
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-nav header{
-    font-family:'Courier New', Courier, monospace;
-    text-align: right;
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration:dashed;
-    padding: 1rem;
-  }
-  
-.navigation header{
-    display:flex;
-    list-style: none;
+/* Estilos de enlaces del encabezado */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
 
+nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.navigation a header:
-    display: block;
-    color:white;
-    padding:20px;
-    text-decoration: double;
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
-.navigation a header:hover {
-	color: rgb(103, 107, 70);
-	font-weight: 700;
-	text-decoration: underline;
+.history-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.history-content img {
+    flex: 0 0 auto; /* Evita que la imagen crezca y mantenga su tamaño original */
+    margin: 0 20px; /* Ajusta el margen entre el texto y la imagen según sea necesario */
+    height: 150px;
+}
+#trips {
+    display: grid;
+    grid-template-rows:auto
+    
+}
+
+#trips img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid #333; /* Añade un marco a las imágenes */
+    box-shadow: 0 0 10px gray;
+}
+
+#trips img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Estilo base para los logotipos */
+footer img {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Para mantener la proporción de la imagen */
+    transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Estilo para resaltar y agrandar al pasar el mouse */
+footer a:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% */
+}
+body {
+    background-color:rgb(83, 149, 182); /* Cambia "#f0f0f0" al color que desees */
+}
+
