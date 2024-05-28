@@ -6,11 +6,11 @@
     ce-width, initial-scale=1.0">
     <meta name="author" content="Azul Nuarte">
     <title>Azul Nuarte | WDD 130</title>
-    <link rel="stylesheet" href="rafting.css">
+    <link rel="stylesheet" href="styles\rafting.css">
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Sample Logo">
+        <img src="images/logo.jpg" alt="Sample Logo">
         <h1>Mendoza Rapids Adventures</h1>
         <nav>
             <ul class="navigation">
@@ -23,10 +23,10 @@
     </header>
     <main>
         <div class="hero">
-            <img src="rafting-mendoza.jpg" alt="...">
+            <img src="images/rafting-mendoza.jpg" alt="...">
             <h1>Rafting Mendoza</h1>
             <article>
-                <img src="empleados-felices.webp" alt="...">
+                <img src="images/empleados-felices.webp" alt="...">
                 <p>We want to provide thrilling rafting experiences in the beautiful landscapes of Mendoza, fostering a love for adventure and nature.</p>
             </article>
         </div>
@@ -42,34 +42,62 @@
                     Diego and Sofia's company expanded to offer various outdoor activities while championing environmental conservation. Today, "Mendoza Rapids Adventures" stands as a testament to their dream, inspiring adventurers worldwide while protecting Mendoza's natural heritage.
                     
                     </p>
-                <img src="mendoza-rafting.jpg" alt="Descripción de la imagen">
+                <img src="images/mendoza-rafting.jpg" alt="Descripción de la imagen">
             </div>
         </section>
-        <section id="trips">
-            <h2>Adventure Awaits You!</h2>
-            <div class="Trips">
-              <img src="rafting1.jpg" alt="...">
-              <img src="rafting2.jpg" alt="...">
-              <img src="rafting3.jpg" alt="...">
-              <img src="rafting4.jpg" alt="...">
-              <img src="rafting5.jpg" alt="...">
-            </div>
-        </section>
-    </main>
-    <footer id="contact">
-        <p>© 2024 Rafting Site ❤ Azul Nuarte </p>
-        <nav class="sociallinks">
-            <a href="https://www.facebook.com/azul.beiza/?locale=es_LA">
-                <img src="facebook.webp" alt="Facebook">
-            </a>
-            <a href="https://www.linkedin.com/in/azul-nuarte-904334261/">
-                <img src="linkedin.webp" alt="LinkedIn">
-            </a>
-            <a href="https://www.instagram.com/azunuarte/">
-                <img src="instagram.webp" alt="Instagram">
-            </a>
-        </nav>
-    </footer>
-</body>
-</html>
-
+        <style>
+            #trips {
+                display: flex;
+                flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+                overflow-x: auto; /* Permite desplazar las imágenes horizontalmente */
+                margin-bottom: 20px; /* Añade un margen al final para separar de otros elementos */
+            }
+    
+            .Trips {
+                display: flex;
+                gap: 10px; /* Espacio entre las imágenes */
+            }
+    
+            .Trips img {
+                max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+                height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+            }
+    
+            /* Estilos para las figuras */
+            figure {
+                margin: 0; /* Elimina márgenes predeterminados */
+            }
+    
+            figcaption {
+                text-align: center; /* Centra el texto */
+                font-style: italic; /* Estilo de fuente cursiva */
+            }
+        </style>
+    
+    <body>
+    
+    <section id="trips">
+        <h2>Adventure Awaits you!</h2>
+        <div class="Trips">
+            <figure>
+                <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting2.jpg" alt="Big Mallard">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting4.jpg" alt="Rapid Name">
+                <figcaption>Moonfall Cascade</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting5.jpg" alt="Otra Aventura">
+                <figcaption>Wild Roar Rapid</figcaption>
+            </figure>
+        </div>
+    </section>
