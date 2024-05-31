@@ -1,0 +1,114 @@
+
+header, footer {
+    background-color: #9dbac2;
+    color: #0c0b0b;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #333;
+        border-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    footer a:hover img {
+        transform: scale(1.2); /* Aumenta el tamaño en un 20% */}
+        
+    
+    footer img {
+            width: 50px; /* Ajusta el tamaño según tus necesidades */
+            height: auto; /* Para mantener la proporción de la imagen */
+            transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+            justify-content: space-between;
+    }
+    main img{
+        width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid #333; /* Añade un marco a las imágenes */
+    box-shadow: 0 0 10px gray;
+}
+
+main img:hover {
+    transform: scale(1.05);
+}
+
+    table{ 
+        table{
+        
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            
+        
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            align-content:center;
+            
+            
+
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #cedadd;
+            color: black;
+        }
+    }
+    section a{
+        display: flex;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px 20px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+section a:hover img {
+            transform: scale(1.2); 
+        
+            
+}
+section a:hover {
+    background-color: #9fbbc0;
+    color: #333;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  
