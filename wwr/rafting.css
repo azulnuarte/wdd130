@@ -97,8 +97,18 @@ footer {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
+    align-items: center;}
+footer a:hover img {
+    transform: scale(1.2); /* Aumenta el tamaño en un 20% */}
+        
+    
+footer img {
+     width: 50px; /* Ajusta el tamaño según tus necesidades */
+     height: auto; /* Para mantener la proporción de la imagen */
+     transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+    justify-content: space-between;
+    }
+
 
 footer p {
     margin: 0;
