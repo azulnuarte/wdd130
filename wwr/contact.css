@@ -1,6 +1,3 @@
-/* Rafting Site CSS */
-
-/* Reset */
 html, body, header, nav, ul, li, a, main, section, figure, img, figcaption, address, p, iframe, form, label, input, textarea, footer {
     margin: 0;
     padding: 0;
@@ -10,14 +7,14 @@ html, body, header, nav, ul, li, a, main, section, figure, img, figcaption, addr
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #d5e6e7;
+    background-color: #eedfc5;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header, footer {
-    background-color: #9dbac2;
+    background-color: #dac391;
     color: #0c0b0b;
     padding: 20px;
     border-top: 1px solid black;
@@ -25,10 +22,15 @@ header, footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 20px;
 }
 
 header img {
     height: 50px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    width: 50px;
+    margin-right: 20px;
 }
 
 h1 {
@@ -50,7 +52,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     padding: 10px 20px;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -82,16 +84,18 @@ h2 {
     max-width: 800px;
     margin: 0 auto;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /* Estilos CSS para el mapa */
 iframe {
-    width: 300px; /* Establece la anchura del mapa */
+    width: 100%; /* Establece la anchura del mapa */
     height: 300px; /* Establece la altura del mapa igual a la anchura para hacerlo cuadrado */
     border: 2px solid #ccc; /* Agrega un borde sólido de 2px con color gris claro */
     border-radius: 10px; /* Agrega bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera */
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 
