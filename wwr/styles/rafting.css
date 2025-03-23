@@ -1,15 +1,15 @@
-/* 🎨 Variables de colores y fuentes */
+
 :root {
-    --primary-color: #005F73; /* Azul intenso */
-    --secondary-color: #0A9396; /* Verde natural */
-    --accent-color: #EE9B00; /* Naranja vibrante */
-    --background-color: #E9D8A6; /* Beige neutro */
-    --text-color: #013641; /* Azul oscuro profundo */
+    --primary-color: #005F73; 
+    --secondary-color: #0A9396; 
+    --accent-color: #EE9B00; 
+    --background-color: #E9D8A6; 
+    --text-color: #013641; 
     --heading-font: 'Oswald', sans-serif;
     --body-font: 'Open Sans', sans-serif;
 }
 
-/* 🌍 Reset básico */
+
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -19,24 +19,24 @@ body {
     max-width: 1200px;
     margin: auto;
 }
-/* Estilos para el Header */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1E3A5F; /* Color de fondo azul oscuro */
+    background-color: #1E3A5F; 
     padding: 10px 20px;
     margin-bottom: 20px;
 }
 
 .logo img {
-    width: 120px; /* Ajusta el tamaño del logo */
+    width: 120px; 
     height: auto;
 }
 
 nav {
     display: flex;
-    gap: 15px; /* Espaciado entre enlaces */
+    gap: 15px; 
 }
 
 nav a {
@@ -48,10 +48,10 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFD700; /* Color dorado al pasar el mouse */
+    color: #FFD700; 
 }
 
-/* Estilos para el Footer */
+
 footer {
     background-color: #1E3A5F;
     color: white;
@@ -118,27 +118,26 @@ p {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 95, 115, 0.7); /* Azul primario con opacidad */
+    background-color: rgba(0, 95, 115, 0.7);
     color: var(--background-color);
     padding: 10px 20px;
     border-radius: 8px;
 }
 
-/* 📌 Estilo del article en hero */
+
 .hero article {
     position: absolute;
     bottom: 10%;
     left: 5%;
-    background: rgba(233, 216, 166, 0.8); /* Fondo beige con transparencia */
+    background: rgba(233, 216, 166, 0.8); 
     padding: 15px;
     border-radius: 10px;
-    width: 40%;
+    width: 90%;
 }
 
 .hero article img {
     float: right;
-    width: 100px;
-    border-radius: 50%;
+    width: 20%;
     margin-left: 10px;
 }
 
@@ -154,14 +153,13 @@ section {
     border-radius: 10px;
 }
 
-/* 📷 Estilos para la galería de imágenes */
 #adventure-awaits img {
     width: 18%;
     margin: 5px;
     border-radius: 5px;
 }
 
-/* 🔗 Redes sociales en el footer */
+
 .footer a {
     text-decoration: none;
 }
