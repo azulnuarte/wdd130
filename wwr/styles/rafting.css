@@ -1,5 +1,5 @@
 
-/* Definición de variables */
+
 :root {
     --primary-color: #005F73;
     --secondary-color: #0A9396;
@@ -10,7 +10,7 @@
     --body-font: 'Open Sans', sans-serif;
 }
 
-/* Estilos generales */
+
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -19,7 +19,7 @@ body {
     padding: 0;
 }
 
-/* Estilos del encabezado */
+
 header {
     background-color: var(--primary-color);
     display: flex;
@@ -45,7 +45,7 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Estilos del Hero */
+
 .hero {
     position: relative;
     text-align: center;
@@ -86,7 +86,7 @@ nav a:hover {
     margin: 10px;
 }
 
-/* Secciones */
+
 section {
     text-align: center;
     padding: 2rem;
@@ -98,14 +98,14 @@ h2 {
     font-size: 2rem;
 }
 
-/* Estilos de la sección Adventure Awaits */
+
 #adventure-awaits img {
     width: 180px;
     height: auto;
     margin: 10px;
     border-radius: 5px;
 }
-/* Estilos del footer */
+
 footer {
     background-color: var(--primary-color);
     color: white;
