@@ -106,7 +106,7 @@ section {
     
     margin-bottom: 10px;
 }
-h2 {
+h1{
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 2rem;
