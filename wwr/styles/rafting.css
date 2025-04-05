@@ -84,8 +84,8 @@ nav a{
     order: 2;
 }
 .hero article p {
-    flex: 1; /* Hace que el texto ocupe el espacio restante */
-    order: 1; /* Se asegura de que el texto esté primero */
+    flex: 1; 
+    order: 1; 
 }
 
 
@@ -103,10 +103,9 @@ nav a{
 section {
     text-align: center;
     padding: 2rem;
-    
     margin-bottom: 10px;
 }
-h1{
+h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
     font-size: 2rem;
@@ -141,7 +140,7 @@ footer{
     height: auto;
 }
 
-.galeria-empleados {
+.employee-galery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -149,12 +148,12 @@ footer{
     margin-top: 2rem;
 }
 
-.galeria-empleados figure {
+.employee-galery figure {
     max-width: 220px;
     text-align: center;
 }
 
-.galeria-empleados img {
+.employee-galery img {
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -162,73 +161,74 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
 }
-.galeria-empleados figcaption {
+.employee-galery figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
     color: var(--text-color);
 }
-.formulario-contacto {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 20px;
-    max-width: 600px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.formulario-contacto h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.formulario-contacto form {
+.contact-form form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
-    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--secondary-color);
 }
 
-.formulario-contacto label {
+.contact-form label {
     font-weight: bold;
     color: var(--text-color);
 }
 
-.formulario-contacto input[type="text"],
-.formulario-contacto input[type="email"],
-.formulario-contacto textarea {
-    padding: 0.8rem;
-    border: 2px solid var(--secondary-color);
-    border-radius: 10px;
-    font-size: 1rem;
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
     font-family: var(--body-font);
-    background-color: #fdfdfd;
+    font-size: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
-.formulario-contacto textarea {
+.contact-form textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
 }
 
-.formulario-contacto input[type="radio"],
-.formulario-contacto input[type="checkbox"] {
-    transform: scale(1.2);
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
     margin-right: 0.5rem;
+    accent-color: var(--accent-color);
 }
 
-.btn-enviar {
+.contact-form button.btn-submit {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
     background-color: var(--accent-color);
     color: white;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-self: flex-start;
+    align-self: center;
+    transition: background-color 0.3s;
 }
 
-.btn-enviar:hover {
-    background-color: #ca7f00;
+.contact-form button.btn-submit:hover {
+    background-color: var(--secondary-color);
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
