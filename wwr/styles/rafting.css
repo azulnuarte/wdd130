@@ -1,5 +1,5 @@
 
-
+/*_______GENERAL CSS_________*/
 :root {
     --primary-color: #005F73;
     --secondary-color: #0A9396;
@@ -63,7 +63,36 @@ nav a{
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
 
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+h1, h2{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2rem;
+    align-items: center;
+}
+
+/*_______ABOUT US_________*/
 .hero article {
     position: absolute;
     bottom: 10%;
@@ -88,7 +117,6 @@ nav a{
     order: 1; 
 }
 
-
 #history{
     padding: 20px;
     
@@ -105,41 +133,15 @@ section {
     padding: 2rem;
     margin-bottom: 10px;
 }
-h1, h2{
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    font-size: 2rem;
-    align-items: center;
-}
+
 #adventure-awaits img{
     width: 200px;
     height: auto;
     border-radius: 5px;
     margin: 10px;
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    
-}
-.social-icons {
-    display: flex;
-    gap: 10px;
-}
 
-.social-icons a {
-    text-decoration: none;
-}
-
-.social-icons img {
-    width: 30px;
-    height: auto;
-}
-
+/*_______CONTACT US_________*/
 .employee-galery {
     display: flex;
     flex-wrap: wrap;
@@ -231,4 +233,143 @@ footer{
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+/*_______HOME_________*/
+.cta-button {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translateY(-50%);
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--primary-color);
+  }
+  
+  
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .grid-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .grid-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  
+  .newsletter {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .newsletter input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: var(--accent-color);
+  }
+/*_______TRIPS_________*/
+.cta-contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent-color);
+    color: white;
+}
+.cta-contact .button {
+    background-color: white;
+    color: var(--accent-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+}
+.trip-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.trip-table {
+    padding: 2rem;
+}
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.trip-table th, .trip-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.trip-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+.wireframe-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
 
+.wireframe-link:hover {
+    color: var(--accent-color);
+}
